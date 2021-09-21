@@ -358,6 +358,12 @@ h6 {
     font-size: 14px;
 }
 
+.post-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .input-field {
     width: 100%;
     padding-top: 10px;
