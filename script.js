@@ -32,7 +32,7 @@ function setTheme(mode) {
     document.getElementById("theme-style").href = "purple.css";
   }
 
-  localStorage.getItem("theme", mode);
+  localStorage.setItem("theme", mode);
 }
 
 let smoothScrollAnchor = document.querySelectorAll("a[href^='#']");
