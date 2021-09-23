@@ -102,10 +102,50 @@ h6 {
 }
 
 .greeting-wrapper {
-    display: grid;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 10em;
+}
+/* typewriter animation */
+.greeting-wrapper h1 {
+    position: relative;
+    /* outline: 2px solid tomato; */
+    width: max-content;
+}
+
+.greeting-wrapper h1::before, .greeting-wrapper h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.greeting-wrapper h1::before {
+    background-color: var(--mainColor);
+    animation: typewriter 6s steps(28) 0.5s forwards;
+}
+
+.greeting-wrapper h1::after {
+    width: 3px;
+    background-color: black;
+    animation: 
+        typewriter 6s steps(28) 0.5s forwards,
+        blink 700ms steps(28) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
 }
 
 .intro-wrapper {
@@ -266,6 +306,37 @@ h6 {
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+}
+/* text fade up animation */
+#preview h3 {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+#preview p {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 2s ease 0.5s forwards;
+}
+
+.left-column h5 {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 3s ease 0.5s forwards;
+}
+
+.left-column p {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 4s ease 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .corner {
