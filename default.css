@@ -130,7 +130,7 @@ h6 {
 
 .greeting-wrapper h1::after {
     width: 3px;
-    background-color: black;
+    background-color: var(--mainText);
     animation: 
         typewriter 6s steps(28) 0.5s forwards,
         blink 700ms steps(28) infinite;
