@@ -479,15 +479,20 @@ h6 {
 }
 
 @media screen and (max-width: 800px) {
+  h1 {
+    font-size: 26px;
+  }
+
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
       "nav-wrapper"
       "left-column"
       "right-column";
+      padding-bottom: 22px;
   }
 
-  .right-column {
-    justify-content: center;
+  .main-container {
+    margin-bottom: 22px;
   }
 }
