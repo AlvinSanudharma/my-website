@@ -23,7 +23,7 @@ body {
 
 /* Body transition */
 body * {
-  transition: 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
