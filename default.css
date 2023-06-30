@@ -226,7 +226,6 @@ h6 {
 #profile-pic {
   display: block;
   margin: 0 auto;
-
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -489,7 +488,7 @@ h6 {
       "nav-wrapper"
       "left-column"
       "right-column";
-      padding-bottom: 22px;
+    padding-bottom: 22px;
   }
 
   .main-container {
